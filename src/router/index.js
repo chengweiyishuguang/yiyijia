@@ -36,6 +36,11 @@ const routes = [
     path: '/night-lis-page',
     name: 'nigthpage',
     component: () => import('@/views/night-lis-page')
+  },
+  {
+    path: '/playpage',
+    name: 'playpage',
+    component: () => import('@/views/playpage')
   }
 
 ]

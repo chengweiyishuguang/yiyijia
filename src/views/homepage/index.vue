@@ -2,7 +2,9 @@
   <div id="home">
     <div class="bgc"></div>
     <!-- 头部区域 -->
-    <layoutheader ><p slot="names">易益家健康平台</p></layoutheader>
+    <layoutheader>
+      <p slot="names">易益家健康平台</p>
+    </layoutheader>
 
     <!-- 搜索区域 -->
     <div class="search">
@@ -91,75 +93,12 @@
       </ul>
     </div>
     <!-- 听书区域 -->
-    <div class="listen">
-      <div class="listen-top">
-        <p>听书</p>
-        <div class="line"></div>
-      </div>
-      <div class="listen-list">
-        <div class="list-img">
-          <img src alt />
-          <span>
-            <img src="../../assets/bofang14-2x.png" alt />
-          </span>
-        </div>
-        <div class="list-item">
-          <div class="list-text">
-            <span>打开心中的记事本</span>
-            <p>人生如歌&nbsp;&nbsp;感悟经典</p>
-          </div>
-          <div class="list-last">
-            <div class="list-last-item">
-              <img src="../../assets/bofang1.png" alt />
-              <span>416万</span>
-            </div>
-            <div class="list-last-item">
-              <img src="../../assets/click-item.png" alt />
-              <span>14:42</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="listen-list">
-        <div class="list-img">
-          <img src alt />
-          <span>
-            <img src="../../assets/bofang14-2x.png" alt />
-          </span>
-        </div>
-        <div class="list-item">
-          <div class="list-text">
-            <span>打开心中的记事本</span>
-            <p>人生如歌&nbsp;&nbsp;感悟经典</p>
-          </div>
-          <div class="list-last">
-            <div class="list-last-item">
-              <img src="../../assets/bofang1.png" alt />
-              <span>416万</span>
-            </div>
-            <div class="list-last-item">
-              <img src="../../assets/click-item.png" alt />
-              <span>14:42</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 导航区域 -->
-    <layoutfooter/>
-
+    <layoutaudio></layoutaudio>
   </div>
 </template>
 
 <script>
-// import layoutheader from '@/components/home/layout-header'
-// import layoutfooter from '@/components/home/layout-footer'
-export default {
-  components: {
-    // layoutheader,
-    // layoutfooter
-  }
-}
+export default {}
 </script>
 
 <style lang="less">
@@ -177,22 +116,22 @@ export default {
 
 .search {
   margin-top: 126px;
-    display: flex;
+  display: flex;
   padding: 0 35px 0 35px;
   justify-content: space-between;
   .inp {
-    width:594px;
-    height:52px;
-     display: flex;
-     position: relative;
-    background:rgba(255,255,255,1);
-    box-shadow:0px 0px 13px 0px rgba(0, 0, 0, 0.21);
-    border-radius:10px;
+    width: 594px;
+    height: 52px;
+    display: flex;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
     box-sizing: border-box;
-     input {
-        width: 100%;
-        height: 100%;
-       background:rgba(255,255,255,1);
+    input {
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 1);
       font-size: 20px;
       padding-left: 64px;
       border: none;
@@ -201,17 +140,14 @@ export default {
     }
 
     .search1 {
-
-    height:30px;
-    width:30px;
-      background: url(../../assets/search-icon191@2x.png) no-repeat ;
-     background-size: 20px;
-    position: absolute;
-    top:15px;
-    left:22px;
-
+      height: 30px;
+      width: 30px;
+      background: url(../../assets/search-icon191@2x.png) no-repeat;
+      background-size: 20px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
     }
-
   }
   .customer {
     margin-top: 20px;
@@ -288,7 +224,7 @@ export default {
       line-height: 36px;
     }
     p:nth-child(2) {
-        margin-top:19px;
+      margin-top: 19px;
       width: 265px;
       height: 25px;
       font-size: 26px;
@@ -367,114 +303,4 @@ export default {
     }
   }
 }
-//听书区域
-.listen-top {
-  display: flex;
-  flex-direction: column;
-  padding-left: 45px;
-  box-sizing: border-box;
-  p {
-    width: 72px;
-    height: 33px;
-    font-size: 36px;
-    font-family: Source Han Sans SC;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    line-height: 36px;
-  }
-  .line {
-    margin-top: 11px;
-    margin-left: 13px;
-    width: 42px;
-    height: 5px;
-    background: rgba(41, 189, 175, 1);
-    border-radius: 3px;
-  }
-}
-.listen {
-  margin: 0 34px;
-}
-.listen-list {
-  width: 680px;
-  height: 224px;
-  margin-top: 28px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.21);
-  background: rgba(255, 255, 255, 1);
-  padding-left: 25px;
-  box-sizing: border-box;
-  border-radius: 20px;
-
-  .list-img {
-    height: 180px;
-    width: 180px;
-    background-color: #ccc;
-    position: relative;
-    .img {
-      height: 100%;
-      width: 100%;
-      border-radius: 10px;
-    }
-    span {
-      position: absolute;
-      width: 51px;
-      height: 51px;
-      left: 50%;
-      top: 50%;
-      margin: -50px 0 0 -50px;
-    }
-  }
-}
-.list-item {
-  margin-left: 29px;
-}
-.list-text {
-  span {
-    width: 254px;
-    height: 30px;
-    font-size: 32px;
-    font-family: Source Han Sans SC;
-    font-weight: 500;
-    color: rgba(68, 68, 68, 1);
-    line-height: 41px;
-  }
-  p {
-    width: 177px;
-    height: 19px;
-    font-size: 20px;
-    font-family: Source Han Sans SC;
-    font-weight: 400;
-    color: rgba(102, 102, 102, 1);
-    line-height: 36px;
-  }
-}
-.list-last {
-  display: flex;
-  .list-last-item {
-    margin-top: 52px;
-    span {
-      margin-left: 15px;
-      width: 57px;
-      height: 19px;
-      font-size: 22px;
-      font-family: Source Han Sans SC;
-      font-weight: 400;
-      color: rgba(102, 102, 102, 1);
-      line-height: 36px;
-    }
-    img {
-      width: 22px;
-      height: 22px;
-    }
-  }
-  .list-last-item:nth-child(2) {
-    margin-left: 34px;
-    img {
-      width: 22px;
-      height: 22px;
-    }
-  }
-}
-
 </style>
