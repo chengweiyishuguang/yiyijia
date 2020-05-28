@@ -1,12 +1,15 @@
 <template>
-  <div class="layout-footer">
-       <footer>
+  <div class="tab-bar">
+<!-- 路由出口 -->
+<router-view/>
+<!-- tabbar标签栏 -->
+ <footer>
       <div>
         <div class="footer-item1">
           <img src="../../assets/cl3.png" alt />
           <img src="../../assets/cl1.png" style="display: none;" alt />
         </div>
-        <a href="#" class="selet Unchecked">首页</a>
+        <router-link class="selet Unchecked" to="/">首页</router-link>
       </div>
       <div>
         <div class="footer-item2">
@@ -14,7 +17,8 @@
           <img src="../../assets/shop1.png" style="display: none;" alt />
         </div>
 
-        <a href="#" class="selet Unchecked">商城</a>
+        <!-- <a href="#" class="selet Unchecked">商城</a> -->
+        <router-link class="selet Unchecked" to="/shoppage">商城</router-link>
       </div>
       <div>
         <div class="footer-item3">
@@ -22,7 +26,8 @@
           <img src="../../assets/car1.png" style="display: none;" alt />
         </div>
 
-        <a href="#" class="selet Unchecked">购物车</a>
+        <!-- <a href="#" class="selet Unchecked">购物车</a> -->
+         <router-link class="selet Unchecked" to="/shoppingcarpage">购物车</router-link>
       </div>
       <div>
         <div class="footer-item4">
@@ -30,7 +35,8 @@
           <img src="../../assets/my.png" style="display: none;" alt />
         </div>
 
-        <a href="#" class="selet Unchecked">我的</a>
+        <!-- <a href="#" class="selet Unchecked">我的</a> -->
+         <router-link class="selet Unchecked" to="/my">我的</router-link>
       </div>
     </footer>
   </div>
@@ -94,4 +100,5 @@ height: 100%;
   }
 
 }
+
 </style>

@@ -152,12 +152,12 @@
 </template>
 
 <script>
-import layoutheader from '@/components/home/layout-header'
-import layoutfooter from '@/components/home/layout-footer'
+// import layoutheader from '@/components/home/layout-header'
+// import layoutfooter from '@/components/home/layout-footer'
 export default {
   components: {
-    layoutheader,
-    layoutfooter
+    // layoutheader,
+    // layoutfooter
   }
 }
 </script>
