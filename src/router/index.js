@@ -41,6 +41,11 @@ const routes = [
     path: '/playpage',
     name: 'playpage',
     component: () => import('@/views/playpage')
+  },
+  {
+    path: '/personalpage',
+    name: 'personpage',
+    component: () => import('@/views/personalpage')
   }
 
 ]

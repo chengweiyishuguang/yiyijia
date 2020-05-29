@@ -87,6 +87,9 @@ export default {
       color: rgba(96, 96, 96, 1);
     }
   }
+  ul {
+    box-sizing: border-box;
+  }
   ul li {
       height: 120px;
       display: flex;
