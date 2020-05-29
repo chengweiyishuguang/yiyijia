@@ -57,6 +57,7 @@
           <i></i>
           选集
         </div>
+        <numsets></numsets>
       </div>
       <ul>
         <li>
@@ -340,7 +341,17 @@ export default {
   display: flex;
   align-items: center;
   border-bottom: 1px solid  rgba(239,239,239,1);
-  padding: 0 34px;
+  padding: 0 34px 0 70px;
+  position: relative;
+  .bofang {
+    background: url(../../assets/all-icon.png) no-repeat;
+      width: 34px;
+      height: 34px;
+      background-size: 34px;
+      position: absolute;
+      top: 20px;
+      left: 34px;
+  }
 
   p {
     font-size: 32px;
