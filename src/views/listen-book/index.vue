@@ -1,18 +1,10 @@
 <template>
-  <div class="night-container">
-    <!-- 头部区域 -->
+  <div class="listen-container">
+      <!-- 头部区域 -->
     <layoutheader>
-      <p slot="names">夜听</p>
+      <p slot="names">健康听书</p>
     </layoutheader>
-
-    <!-- 搜索区域 -->
-    <div class="search">
-      <div class="inp">
-        <i class="search-icon"></i>
-        <input type="text" placeholder="搜索你想听的节目" />
-      </div>
-    </div>
-    <!-- banner区域 -->
+     <!-- banner区域 -->
     <div class="banner">
       <img src alt />
     </div>
@@ -20,11 +12,11 @@
     <div class="navigation">
       <a href="#" class="navigation-left">
         <span>听书</span>
-        <i class="line" style="display: none;"></i>
+        <i class="line"></i>
       </a>
       <a href="#" class="navigation-right">
         <span>夜听</span>
-        <i class="line" ></i>
+        <i class="line" style="display: none;"></i>
       </a>
     </div>
 
@@ -46,68 +38,24 @@
 
     <!-- 听书区域 -->
     <layoutaudio></layoutaudio>
-
-    <!-- 固定条 -->
-    <a href="#" id="fix">
-      <span>上传自己的节目</span>
-    </a>
     <!-- 皇冠 -->
     <span class="hg">
       <img src="../../assets/hg.png" alt="">
     </span>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'nightpage'
+  name: 'listenpage'
 }
 </script>
 
 <style lang="less" scoped>
-.search {
-  margin-top: 113px;
-  display: flex;
-  padding: 0 35px 0 35px;
-  justify-content: space-between;
-  .inp {
-    width: 681px;
-    height: 52px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.21);
-    border-radius: 10px;
-    position: relative;
-
-    display: flex;
-
-    box-sizing: border-box;
-    input {
-      width: 100%;
-      height: 100%;
-      color: #a7a7a7;
-      font-size: 22px;
-      padding-left: 70px;
-      box-sizing: border-box;
-      border: none;
-      background: rgba(255, 255, 255, 1);
-      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.21);
-      border-radius: 10px;
-    }
-
-    .search-icon {
-      height: 30px;
-      width: 30px;
-      background: url(../../assets/search-icon191@2x.png) no-repeat;
-      background-size: 20px;
-      position: absolute;
-      top: 15px;
-      left: 22px;
-    }
-  }
-}
 // banner区
 .banner {
-  margin: 25px 35px 9px 35px;
+  margin: 105px 35px 9px 35px;
   width: 680px;
   height: 298px;
   border-radius: 20px;
@@ -222,4 +170,5 @@ text-align: center;
     height: 100%;
   }
 }
+
 </style>

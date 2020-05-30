@@ -3,10 +3,10 @@
   <div class="audio-list">
        <!-- 听书区域 -->
     <div class="listen">
-      <div class="listen-top">
+      <!-- <div class="listen-top">
         <p>听书</p>
         <div class="line"></div>
-      </div>
+      </div> -->
       <div class="listen-list">
         <div class="list-img">
           <img src alt />
