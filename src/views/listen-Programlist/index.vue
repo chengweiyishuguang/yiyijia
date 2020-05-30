@@ -1,29 +1,17 @@
 <template>
   <div class="Program-container">
-    <div class="bgc"></div>
+    <!-- <div class="bgc"></div> -->
     <!-- 头部区域 -->
     <layoutheader>
       <p slot="names">健康听书</p>
+      <!-- banner -->
     </layoutheader>
-    <!-- banner区域 -->
-    <div class="banner">
-      <img src alt />
-      <span class="play">
-        <i class="play-icon"></i>
-        <span>播放</span>
 
-      </span>
-    </div>
-<!-- 简介收藏 分享 -->
-    <div class="bref-i">
-      <p>失传的营养学失传的营养学失传的营养学失传的营养学失传的营养学失传的营养学</p>
-      <div  class="p-collent">
-                    <p>已关注</p>
-                    <p>关注</p>
-                </div>
-    </div>
+    <layoutpublic>
+       <p slot="text1">失传的营养学失传的营养学失传的营养学失传的营养学失传的营养学失传的营养学</p>
+    </layoutpublic>
 
-     <!--导航2-->
+  <!--导航2-->
     <div class="navigation-bar">
       <a href="#">
         <span>节目列表</span>
@@ -38,7 +26,8 @@
         <i class="line" style="display: none;"></i>
       </a>
     </div>
-<!-- 节目 -->
+
+    <!-- 节目列表 -->
     <ul>
         <li>
             <div class="li-bot">
@@ -106,16 +95,16 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.bgc {
-  background: url(../../assets/bg-@2x.png);
-  background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+// .bgc {
+//   background: url(../../assets/bg-@2x.png);
+//   background-size: 100% 100%;
+//   height: 100%;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+// }
 // banner区
 .banner {
   margin: 105px 35px 9px 35px;
@@ -199,6 +188,44 @@ color:rgba(102,102,102,1);
          background:rgba(41,189,139,1);
     }
 }
+}
+
+// 导航2
+.navigation-bar {
+margin:15px 0 40px 0;
+  display: flex;
+  padding-left: 45px;
+  box-sizing: border-box;
+
+  width:750px;
+height:93px;
+background:rgba(255,255,255,1);
+box-shadow:0px 0px 21px 0px rgba(0, 0, 0, 0.07);
+  a:nth-child(2) {
+    margin: 0 72px 0 76px;
+  }
+
+  span {
+    width: 102px;
+    height: 25px;
+    font-size: 26px;
+    font-family: Source Han Sans SC;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(115, 115, 115, 1);
+  }
+  a:nth-child(1) span {
+    color: #29bdaf;
+  }
+
+  .line {
+    display: block;
+    margin: 15px 18px 0 18px;
+    width: 66px;
+    height: 2px;
+    background: rgba(41, 189, 175, 1);
+    border-radius: 1px;
+  }
 }
 
 // 导航2

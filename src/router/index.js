@@ -5,16 +5,16 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {
+  { // tabbar页
     path: '/',
     component: () => import('@/views/tab-bar'),
     children: [
-      {
+      { // 主页
         path: '', // 默认子路由
         name: 'homepage',
         component: () => import('@/views/homepage')
       },
-      {
+      { // 购物
         path: '/shoppage',
         name: 'shoppage',
         component: () => import('@/views/shoppage')
@@ -32,30 +32,37 @@ const routes = [
     ]
 
   },
-  {
+  { // 夜听页
     path: '/night-lis-page',
     name: 'nigthpage',
     component: () => import('@/views/night-lis-page')
   },
-  {
+  { // 夜听播放页面
     path: '/playpage',
     name: 'playpage',
     component: () => import('@/views/playpage')
   },
-  {
+  { // 夜听个人中心
     path: '/personalpage',
     name: 'personpage',
     component: () => import('@/views/personalpage')
   },
-  {
+  { // 听书
     path: '/listen-book',
     name: 'listenpage',
     component: () => import('@/views/listen-book')
   },
   {
-    path: '/Programlist',
+    // 听书 节目列表
+    path: '/listen-Programlist',
     name: 'Programlist',
-    component: () => import('@/views/Programlist')
+    component: () => import('@/views/listen-Programlist')
+  },
+  {
+    // 听书简介
+    path: '/listen-introduce',
+    name: 'listen-introduce',
+    component: () => import('@/views/listen-introduce')
   }
 
 ]
