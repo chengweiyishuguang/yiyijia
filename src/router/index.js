@@ -51,6 +51,11 @@ const routes = [
     path: '/listen-book',
     name: 'listenpage',
     component: () => import('@/views/listen-book')
+  },
+  {
+    path: '/Programlist',
+    name: 'Programlist',
+    component: () => import('@/views/Programlist')
   }
 
 ]

@@ -26,7 +26,7 @@ header {
   width: 750px;
   height: 88px;
   min-width: 320px;
-  background-color: #28beae;
+  background:rgba(41,189,175,1);
   color: #fff;
   display: flex;
   justify-content: space-between;
