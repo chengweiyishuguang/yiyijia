@@ -1,7 +1,6 @@
 <template>
   <div class="introduce">
 
-    <div class="bgc"></div>
     <!-- 头部区域 -->
     <layoutheader>
       <p slot="names">失传的营养学</p>

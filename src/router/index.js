@@ -63,6 +63,13 @@ const routes = [
     path: '/listen-introduce',
     name: 'listen-introduce',
     component: () => import('@/views/listen-introduce')
+  },
+  {
+    // 听书-评论学习
+
+    path: '/listen-comment',
+    name: 'comment',
+    component: () => import('@/views/listen-comment')
   }
 
 ]
