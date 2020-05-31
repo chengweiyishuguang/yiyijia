@@ -27,8 +27,10 @@
                 <img src="../../assets/audio-icon5.png" alt="">
             </i>
             <i >
-                <img src="../../assets/audio-icon6.png" alt="">
-                <span class="count">999+</span>
+              <slot name="progress">
+
+              </slot>
+
             </i>
         </div>
 

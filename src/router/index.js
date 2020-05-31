@@ -84,6 +84,13 @@ const routes = [
     path: '/listen-LoopPlayback',
     name: 'loop-playback',
     component: () => import('@/views/listen-LoopPlayback')
+  },
+  {
+    // 听书-详情页
+
+    path: '/listen-detailspage',
+    name: 'detail-page',
+    component: () => import('@/views/listen-detailspage')
   }
 
 ]

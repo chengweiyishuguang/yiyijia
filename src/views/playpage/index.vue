@@ -55,11 +55,16 @@
         </div>
 
 <!-- 进度条 -->
-     <laypotpro/>
+     <laypotpro>
+       <template slot="progress">
+          <img src="../../assets/audio-icon6.png" alt="">
+            <span class="count">999+</span>
+       </template>
+     </laypotpro>
 
     </footer>
     <!-- 弹出层播放明细 -->
-    <listoptions></listoptions>
+    <!-- <listoptions></listoptions> -->
   </div>
 </template>
 

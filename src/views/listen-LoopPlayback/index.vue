@@ -35,7 +35,7 @@
        <button>关闭</button>
     </div>
     </div>
-
+<!-- 循环播放按钮 -->
   </div>
 </template>
 
