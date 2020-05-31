@@ -5,7 +5,7 @@
       <p slot="names">我的评论</p>
     </layoutheader>
     <!-- 评论列表 -->
-    <!-- 评论列表 -->
+
     <div class="pl">
       <layoutcomment></layoutcomment>
     </div>

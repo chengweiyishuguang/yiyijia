@@ -91,7 +91,9 @@ width: 670px;
 margin: 0 auto;
 border-bottom:2px solid rgba(233,233,233,1);
 position: relative;
+padding-bottom:65px;
 p{
+
     font-size:32px;
 font-family:Source Han Sans SC;
 font-weight:500;

@@ -77,6 +77,13 @@ const routes = [
     path: '/listen-Mycomments',
     name: 'mycomment',
     component: () => import('@/views/listen-Mycomments')
+  },
+  {
+    // 听书-单曲循环页面
+
+    path: '/listen-LoopPlayback',
+    name: 'loop-playback',
+    component: () => import('@/views/listen-LoopPlayback')
   }
 
 ]
