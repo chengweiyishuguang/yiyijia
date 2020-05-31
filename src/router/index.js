@@ -91,6 +91,13 @@ const routes = [
     path: '/listen-detailspage',
     name: 'detail-page',
     component: () => import('@/views/listen-detailspage')
+  },
+  {
+    // 签到-问候页
+
+    path: '/punch-togreetpage',
+    name: 'togreet-page',
+    component: () => import('@/views/punch-togreetpage')
   }
 
 ]
