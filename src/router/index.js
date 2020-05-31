@@ -70,6 +70,13 @@ const routes = [
     path: '/listen-comment',
     name: 'comment',
     component: () => import('@/views/listen-comment')
+  },
+  {
+    // 听书-评论-我的评论
+
+    path: '/listen-Mycomments',
+    name: 'mycomment',
+    component: () => import('@/views/listen-Mycomments')
   }
 
 ]
