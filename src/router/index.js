@@ -98,6 +98,13 @@ const routes = [
     path: '/punch-togreetpage',
     name: 'togreet-page',
     component: () => import('@/views/punch-togreetpage')
+  },
+  {
+    // 签到-签到成功页
+
+    path: '/punch-signIn',
+    name: 'siginInpage',
+    component: () => import('@/views/punch-signIn')
   }
 
 ]

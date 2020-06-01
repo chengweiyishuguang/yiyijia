@@ -1,5 +1,6 @@
 <template>
-  <div class="togreet-container">
+  <div class="sign-container">
+
     <!-- 背景图片 -->
     <div class="bgc"></div>
 
@@ -8,21 +9,29 @@
 
  <!-- 列表区域 -->
  <punchlist >
-   <img src="../../assets/punch-icon.png" alt="" slot="icon">
+     <img src="../../assets/signin-bof.png" alt="" slot="icon">
  </punchlist>
 
     <!-- 问候语 -->
     <punchfooter>
         <template slot="footer">
-            <a href="#">变成我的问候</a>
+            <a href="#">传递我的问候</a>
         </template>
     </punchfooter>
+    <!-- 遮盖层 -->
+    <div class="Coveringlayer">
+        <img src="../../assets/signin-tc.png" alt="">
+        <div class="success">
+            <img src="../../assets/signin-icon.png" alt="">
+        </div>
+    </div>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: 'togreet-page'
+  name: 'siginInpage'
 }
 </script>
 
@@ -55,5 +64,30 @@ font-size:34px;
 color:#FFFFFF;
 text-align: center;
     }
+}
+.Coveringlayer {
+    height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .success {
+      width: 508px;
+      height: 310px;
+      position: fixed;
+   left: 50%;
+      top: 50%;
+      margin: -155px 0 0 -254px;
+      img {
+          height: 100%;
+    width: 100%;
+      }
+  }
 }
 </style>

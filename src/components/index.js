@@ -6,6 +6,9 @@ import numsets from './personal/num-sets.vue'// 个人中心播放集数组件�
 import laypotpro from './home/layout-progress.vue'// 播放器进度条组件
 import layoutpublic from './listen/layout-public.vue'// 听书节目列表公共组件
 import layoutcomment from './comment/layout-comment.vue'// 听书-评论列表
+import punchlist from './punch/punch-list.vue'// 变成我的问候列表组件
+import punchheader from './punch/punch-header'// 变成我的问候头部组件
+import punchfooter from './punch/punch-footer'// 变成我的问候底部区域组件
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -15,5 +18,8 @@ export default {
     Vue.component('laypotpro', laypotpro)
     Vue.component('layoutpublic', layoutpublic)
     Vue.component('layoutcomment', layoutcomment)
+    Vue.component('punchlist', punchlist)
+    Vue.component('punchheader', punchheader)
+    Vue.component('punchfooter', punchfooter)
   }
 }
