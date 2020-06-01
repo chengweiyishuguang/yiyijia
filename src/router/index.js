@@ -105,6 +105,13 @@ const routes = [
     path: '/punch-signIn',
     name: 'siginInpage',
     component: () => import('@/views/punch-signIn')
+  },
+  {
+    // 签到-分享页
+
+    path: '/punch-sharepage',
+    name: 'sharepage',
+    component: () => import('@/views/punch-sharepage')
   }
 
 ]

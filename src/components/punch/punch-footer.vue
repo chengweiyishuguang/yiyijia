@@ -18,10 +18,14 @@ export default {
 <style lang="less" scoped>
 
 .greetings {
+
     text-align: center;
-    position: fixed;
-    bottom: 63px;
-    left: 35px;
+    // position: fixed;
+    // bottom: 63px;
+    // left: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
 
     a {
         display: block;
