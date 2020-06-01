@@ -112,6 +112,13 @@ const routes = [
     path: '/punch-sharepage',
     name: 'sharepage',
     component: () => import('@/views/punch-sharepage')
+  },
+  {
+    // 签到-打卡 早 晚
+
+    path: '/punch-Clockin',
+    name: 'clickinpage',
+    component: () => import('@/views/punch-Clockin')
   }
 
 ]
