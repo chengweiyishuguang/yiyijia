@@ -119,6 +119,13 @@ const routes = [
     path: '/punch-Clockin',
     name: 'clickinpage',
     component: () => import('@/views/punch-Clockin')
+  },
+  {
+    // 签到-打卡 中午
+
+    path: '/punch-Clocknoon',
+    name: 'clicknoonpage',
+    component: () => import('@/views/punch-Clocknoon')
   }
 
 ]

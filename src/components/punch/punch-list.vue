@@ -26,7 +26,8 @@
         </div>
       </div>
       <!-- 列表二层 -->
-      <div class="list-two">
+      <slot name="punch-list"></slot>
+      <!-- <div class="list-two">
         <p>成光里是的梦人</p>
         <p>
           奋斗就是每天做好手头上的每件小事,不推
@@ -37,7 +38,7 @@
           气，带着你的坚持，引领你到你想要到的
           地方去。
         </p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

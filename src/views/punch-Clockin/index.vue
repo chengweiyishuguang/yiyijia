@@ -11,6 +11,20 @@
  <punchlist >
      <img src="../../assets/punch-icon.png" alt="" slot="icon">
      <img src="../../assets/signin-bof.png" alt="" slot="icon">
+<template slot="punch-list">
+<div class="list-two">
+        <p>成光里是的梦人</p>
+        <p>
+          奋斗就是每天做好手头上的每件小事,不推
+          不抱怨不推卸责任不偷懒。
+        </p>
+        <p>
+          每天一点一滴的努力，才能汇聚起千万勇
+          气，带着你的坚持，引领你到你想要到的
+          地方去。
+        </p>
+      </div>
+</template>
  </punchlist>
 
     <!-- 问候语 -->
