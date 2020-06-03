@@ -42,9 +42,9 @@ export default {
 
 <style lang="less" scoped>
 .bgc {
-  background: url(../../assets/bg-@2x.png);
-  background-size: 100% 100%;
-  height: 100%;
+   background: url(../../assets/punch-clock.png);
+  background-size: 100% ;
+  height: 570px;
   width: 100%;
   position: fixed;
   top: 0;

@@ -89,14 +89,14 @@ video {
   // z-index: -1;
 }
 .video-icn {
-  background: url(../../assets/punch-noon.png) no-repeat;
-  width: 100px;
-  height: 100px;
-  background-size: 100px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  margin:-50px 0 0 -50px;
+  background: url(../../assets/punch-clocknoon-bg.png);
+  background-size: 100% ;
+  height: 570px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
 }
 span {

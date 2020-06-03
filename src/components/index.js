@@ -9,6 +9,11 @@ import layoutcomment from './comment/layout-comment.vue'// 听书-评论列表
 import punchlist from './punch/punch-list.vue'// 变成我的问候列表组件
 import punchheader from './punch/punch-header'// 变成我的问候头部组件
 import punchfooter from './punch/punch-footer'// 变成我的问候底部区域组件
+import progresscircle from './personal/progress-circle'// 夜听和减压个人中心页下方播放按钮
+import detailsintroduce from './personal/details-introduce.vue'// 夜听和减压个人中心页banner介绍区域
+import detailslist from './personal/details-list.vue'// 夜听和减压个人中心页列表区域
+import layoutplayer from './personal/layout-player.vue'// 夜听和减压个人中心页底部播放组件
+
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -21,5 +26,9 @@ export default {
     Vue.component('punchlist', punchlist)
     Vue.component('punchheader', punchheader)
     Vue.component('punchfooter', punchfooter)
+    Vue.component('progresscircle', progresscircle)
+    Vue.component('detailsintroduce', detailsintroduce)
+    Vue.component('detailslist', detailslist)
+    Vue.component('layoutplayer', layoutplayer)
   }
 }

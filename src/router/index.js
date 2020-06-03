@@ -122,12 +122,17 @@ const routes = [
   },
   {
     // 签到-打卡 中午
-
     path: '/punch-Clocknoon',
     name: 'clicknoonpage',
     component: () => import('@/views/punch-Clocknoon')
-  }
+  },
 
+  {
+    // 减压助眠-个人中心页
+    path: '/decompression-personal',
+    name: 'personpage',
+    component: () => import('@/views/decompression-personal')
+  }
 ]
 
 const router = new VueRouter({

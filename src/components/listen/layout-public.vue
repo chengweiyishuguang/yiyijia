@@ -33,9 +33,9 @@ export default {
 
 <style lang="less" scoped>
 .bgc {
-  background: url(../../assets/bg-@2x.png);
+  background: url(../../assets/listen-bg.png);
   background-size: 100% 100%;
-  height: 100%;
+  height: 286px;
   width: 100%;
   position: fixed;
   top: 0;
