@@ -7,7 +7,7 @@
 
     <!-- banner区域 -->
     <div class="banner">
-      <img src alt />
+      <img src="../../assets/d-banner.png" alt="">
     </div>
     <!-- tabbar -->
     <div class="navigation">
@@ -111,6 +111,7 @@ export default {
   img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 }
 // tabbar

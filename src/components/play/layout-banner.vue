@@ -1,20 +1,7 @@
 <template>
   <div class="play-banner">
-      <div class="main">
-         <div class="logo">
-            <img src="../../assets/logo@2x.png" alt="">
-         </div>
+    <slot name="yuanpan"></slot>
 
-        <div class="banner">
-            <div class="banner-img">
-                <img src="../../assets/newyuanban.png" alt="">
-            </div>
-
-            <div class="zhizhen">
-                <img src="../../assets/zhizhen.png" alt="">
-            </div>
-        </div>
-    </div>
   </div>
 </template>
 

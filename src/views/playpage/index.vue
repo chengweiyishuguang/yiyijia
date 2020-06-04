@@ -7,9 +7,29 @@
       <p slot="names">夜听</p>
     </layoutheader>
     <!-- 主体区域 -->
-    <layoutbanner></layoutbanner>
+    <layoutbanner >
+      <template slot="yuanpan">
+        <div class="main">
+         <div class="logo">
+            <img src="../../assets/logo@2x.png" alt="">
+         </div>
+
+        <div class="banner">
+            <div class="banner-img">
+                <img src="../../assets/newyuanban.png" alt="">
+            </div>
+
+            <div class="zhizhen">
+                <img src="../../assets/zhizhen.png" alt="">
+            </div>
+        </div>
+    </div>
+      </template>
+
+    </layoutbanner>
     <!-- 播放区域 -->
     <layoutplayfooter>
+
       <template slot="f-follow">
         <div class="follow">
           <p>已关注</p>

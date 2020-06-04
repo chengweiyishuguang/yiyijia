@@ -1,5 +1,6 @@
 // 全局注册组件
 import layoutheader from './home/layout-header'// 头部组件
+// import layoutprogress from './home/layout-progress.vue'
 import layoutaudio from './night/layout-audio.vue'// 听书模块组件
 import listoptions from './play/list-options.vue'// 听书播放页面收藏弹层
 import layoutbanner from './play/layout-banner.vue'// 听书播放页面banner部分
@@ -15,7 +16,7 @@ import progresscircle from './personal/progress-circle'// 夜听和减压个人�
 import detailsintroduce from './personal/details-introduce.vue'// 夜听和减压个人中心页banner介绍区域
 import detailslist from './personal/details-list.vue'// 夜听和减压个人中心页列表区域
 import layoutplayer from './personal/layout-player.vue'// 夜听和减压个人中心页底部播放组件
-
+import layoutprogress from './decompression/d-progress.vue'
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -34,5 +35,6 @@ export default {
     Vue.component('layoutplayer', layoutplayer)
     Vue.component('layoutbanner', layoutbanner)
     Vue.component('layoutplayfooter', layoutplayfooter)
+    Vue.component('layoutprogress', layoutprogress)
   }
 }
