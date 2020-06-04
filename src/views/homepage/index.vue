@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+
     <div class="bgc"></div>
     <!-- 头部区域 -->
     <layoutheader>
@@ -43,52 +44,57 @@
     <div class="main">
       <ul>
         <li>
-          <a href="#">
+          <router-link tag="a" to="">
             <i>
               <img src alt />
             </i>
-            <span>健康商城</span>
-          </a>
+             <span>健康商城</span>
+          </router-link>
+
         </li>
         <li>
-          <a href="#">
+          <router-link tag="a" to="">
             <i>
               <img src alt />
             </i>
-            <span>健康听书</span>
-          </a>
+             <span>健康听书</span>
+          </router-link>
+
         </li>
         <li>
-          <a href="#">
+          <router-link tag="a" to="/decompression-life-song">
             <i>
               <img src alt />
             </i>
             <span>减压助眠</span>
-          </a>
+          </router-link>
+
         </li>
         <li>
-          <a href="#">
+          <router-link tag="a" to="">
             <i>
               <img src alt />
             </i>
-            <span>我的空间</span>
-          </a>
+             <span>我的空间</span>
+          </router-link>
+
         </li>
         <li>
-          <a href="#">
+          <router-link tag="a" to="">
             <i>
               <img src alt />
             </i>
-            <span>我的客户</span>
-          </a>
+              <span>我的客户</span>
+          </router-link>
+
         </li>
         <li>
-          <a href="#">
+          <router-link tag="a" to="">
             <i>
               <img src alt />
             </i>
-            <span>我的订单</span>
-          </a>
+              <span>我的订单</span>
+          </router-link>
         </li>
       </ul>
     </div>

@@ -11,8 +11,15 @@ const routes = [
     children: [
       { // 主页
         path: '', // 默认子路由
-        name: 'homepage',
         component: () => import('@/views/homepage')
+        // children: [
+        //   {
+        //     path: '/decompression-life-song', // 默认子路由
+        //     name: 'life-song-page',
+        //     component: () => import('@/views/decompression-life-song')
+        //   }
+
+        // ]
       },
       { // 购物
         path: '/shoppage',
@@ -130,8 +137,31 @@ const routes = [
   {
     // 减压助眠-个人中心页
     path: '/decompression-personal',
-    name: 'personpage',
+    name: 'd-personpage',
     component: () => import('@/views/decompression-personal')
+  },
+  {
+    // 减压助眠-个人中心页
+    path: '/decompression-playerpage',
+    name: 'd-playerpage',
+    component: () => import('@/views/decompression-playerpage')
+  },
+  {
+    // 减压助眠-tabbar
+    path: '/life-tab-bar',
+    name: 'life-tab-bar',
+    component: () => import('@/views/life-tab-bar')
+  },
+  { // 减压助眠-人生如歌
+    path: '/decompression-life-song',
+    name: 'life-song-page',
+    component: () => import('@/views/decompression-life-song')
+  },
+
+  { // 减压助眠-音乐
+    path: '/decompression-music',
+    name: 'musicpage',
+    component: () => import('@/views/decompression-music')
   }
 ]
 

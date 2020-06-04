@@ -29,7 +29,11 @@
               <span>14:42</span>
             </div>
           </div>
+
         </div>
+        <span class="hg" style="visibility:hidden">
+      <img src="../../assets/hg.png" alt="">
+    </span>
       </div>
       <div class="listen-list">
         <div class="list-img">
@@ -54,7 +58,11 @@
             </div>
           </div>
         </div>
+         <span class="hg">
+      <img src="../../assets/hg.png" alt="">
+    </span>
       </div>
+
     </div>
   </div>
 </template>
@@ -104,6 +112,8 @@ export default {
   padding-left: 25px;
   box-sizing: border-box;
   border-radius: 20px;
+  flex-shrink: 0;
+  position: relative;
 
   .list-img {
     height: 180px;
@@ -173,6 +183,17 @@ export default {
       width: 22px;
       height: 22px;
     }
+  }
+}
+.hg {
+  width: 71px;
+  height: 71px;
+ position: absolute;
+ right:0;
+ bottom:24px;
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 

@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'personpage'
+  name: 'd-personpage'
 }
 
 </script>
