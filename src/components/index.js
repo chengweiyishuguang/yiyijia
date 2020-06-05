@@ -16,7 +16,8 @@ import progresscircle from './personal/progress-circle'// 夜听和减压个人�
 import detailsintroduce from './personal/details-introduce.vue'// 夜听和减压个人中心页banner介绍区域
 import detailslist from './personal/details-list.vue'// 夜听和减压个人中心页列表区域
 import layoutplayer from './personal/layout-player.vue'// 夜听和减压个人中心页底部播放组件
-import layoutprogress from './decompression/d-progress.vue'
+import layoutprogress from './decompression/d-progress.vue'// 减压助眠播放页面进度条
+import dlistPopup from './decompression/d-listPopup.vue'// 减压助眠播放页面弹层
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -36,5 +37,6 @@ export default {
     Vue.component('layoutbanner', layoutbanner)
     Vue.component('layoutplayfooter', layoutplayfooter)
     Vue.component('layoutprogress', layoutprogress)
+    Vue.component('dlistPopup', dlistPopup)
   }
 }

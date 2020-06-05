@@ -21,7 +21,7 @@
     <!-- 播放区域进度条 -->
     <layoutprogress></layoutprogress>
     <!-- 弹出层播放明细 -->
-    <!-- <listoptions></listoptions> -->
+   <dlistPopup></dlistPopup>
   </div>
 </template>
 
