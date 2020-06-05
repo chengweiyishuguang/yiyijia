@@ -21,7 +21,9 @@
     <!-- 播放区域进度条 -->
     <layoutprogress></layoutprogress>
     <!-- 弹出层播放明细 -->
-   <dlistPopup></dlistPopup>
+   <!-- <dlistPopup></dlistPopup> -->
+   <!-- 弹出层定时 -->
+  <dtimeList/>
   </div>
 </template>
 

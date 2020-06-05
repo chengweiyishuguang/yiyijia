@@ -146,6 +146,7 @@ ul li {
     border-radius: 20px;
     text-align: center;
     font-size: 34px;
+    border: none;
   }
 }
 ul li:nth-child(2) {
