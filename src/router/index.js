@@ -167,6 +167,12 @@ const routes = [
     path: '/decompression-music-playpage',
     name: 'music-play',
     component: () => import('@/views/decompression-music-playpage')
+  },
+  { // 减压助眠身心灵页面
+    path: '/decompression-Body-m-s',
+    name: 'bms-page',
+    component: () => import('@/views/decompression-Body-m-s')
+
   }
 ]
 

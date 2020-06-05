@@ -14,7 +14,11 @@
              <div class="banner">
             <div class="banner-img">
                 <img src="../../assets/d-banner.png" alt="">
+                <span class="d-b-timing">
+                定时已开启
+                </span>
             </div>
+
         </div>
         </template>
     </layoutbanner>
@@ -23,7 +27,7 @@
     <!-- 弹出层播放明细 -->
    <!-- <dlistPopup></dlistPopup> -->
    <!-- 弹出层定时 -->
-  <dtimeList/>
+  <!-- <dtimeList/> -->
   </div>
 </template>
 
@@ -48,10 +52,12 @@ export default {
 
 .banner {
 top:88px;
-  position: relative;
-//   margin-bottom:228px;
+height: 507px;
+position: relative;
+//margin-bottom:228px;
 
 }
+
  .banner-img {
   width: 506px;
   height: 507px;
@@ -61,6 +67,7 @@ top:88px;
   top:32px;
 
 }
+
 .banner-img img {
   width: 100%;
   height: 100%;
@@ -71,6 +78,7 @@ top:88px;
   transform-origin: center;
   animation: 10s rot linear infinite;
 }
+
 @keyframes rot {
   0% {
     transform: rotate(0deg);
@@ -82,5 +90,22 @@ top:88px;
     transform: rotate(360deg);
   }
 }
+.d-b-timing {
+    width:198px;
+height:102px;
+line-height:102px;
+text-align: center;
+background:rgba(0,0,0,1);
+opacity:0.78;
+border-radius:20px;
+    display: block;
 
+    font-size:30px;
+color:rgba(254,254,254,1);
+position: absolute;
+bottom: 38px;
+left:50%;
+margin-left:-99px;
+
+}
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="night-container">
+  <div class="bms-container">
     <!-- 头部区域 -->
     <layoutheader>
-      <p slot="names">夜听</p>
+      <p slot="names">减压助眠</p>
     </layoutheader>
 
     <!-- 搜索区域 -->
@@ -16,53 +16,67 @@
     <div class="banner">
       <img src alt />
     </div>
-    <!-- 导航 -->
+
+    <!-- tabbar -->
     <div class="navigation">
-      <a href="#" class="navigation-left">
-        <span>听书</span>
-        <i class="line" style="display: none;"></i>
-      </a>
-      <a href="#" class="navigation-right">
-        <span>夜听</span>
+         <router-link tag="a" class="navigation-left" to="/miuse">
+             <span>音乐</span>
+            <i class="line" style="visibility:hidden;"></i>
+         </router-link>
+        <router-link tag="a" class="navigation-middle" to="/">
+            <span>人生如歌</span>
+        <i class="line" style="visibility:hidden;"></i>
+        </router-link>
+        <router-link tag="a" class="navigation-right" to="/body">
+            <span>身心灵</span>
         <i class="line" ></i>
-      </a>
+        </router-link>
+
     </div>
 
     <!--导航2-->
     <div class="navigation-bar">
       <a href="#">
-        <span>综合排序</span>
-        <i class="line"></i>
+           <span>
+               综合排序
+          <select name="" id="" style="border:none">
+              <option value=""></option>
+          </select>
+       </span>
+
       </a>
       <a href="#">
-        <span>播放量较多</span>
-        <i class="line" style="display: none;"></i>
+        <span>事业</span>
+
       </a>
       <a href="#">
-        <span>最近更新</span>
-        <i class="line" style="display: none;"></i>
+        <span>家庭</span>
+
+      </a>
+      <a href="#">
+        <span>社会</span>
+
+      </a>
+      <a href="#">
+        <span>职场</span>
+
       </a>
     </div>
-
     <!-- 听书区域 -->
     <layoutaudio></layoutaudio>
 
     <!-- 固定条 -->
-    <a href="#" id="fix">
-      <span>上传自己的节目</span>
-    </a>
-
+   <layoutfixed></layoutfixed>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'nightpage'
+  name: 'bms-page'
 }
 </script>
 
 <style lang="less" scoped>
-
 // banner区
 .banner {
   margin: 25px 35px 9px 35px;
@@ -75,7 +89,7 @@ export default {
     height: 100%;
   }
 }
-//导航区域
+// tabbar
 .navigation {
   display: flex;
   width: 750px;
@@ -87,8 +101,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-}
 
+}
 .navigation > a {
   text-align: center;
 
@@ -100,6 +114,7 @@ export default {
     font-weight: 500;
     color: rgba(85, 85, 85, 1);
     line-height: 30px;
+
   }
   .line {
     display: block;
@@ -108,18 +123,17 @@ export default {
     height: 2px;
     background: rgba(41, 189, 175, 1);
     border-radius: 1px;
+
   }
 }
-
 // 导航2
 .navigation-bar {
   margin:40px 0 40px 0;
   display: flex;
-  padding-left: 45px;
+  justify-content: space-between;
+  padding:0 59px 0 45px;
   box-sizing: border-box;
-  a:nth-child(2) {
-    margin: 0 72px 0 76px;
-  }
+  border-bottom:1px solid #EFEFEF;
 
   span {
     width: 102px;
@@ -130,7 +144,7 @@ export default {
     line-height: 36px;
     color: rgba(115, 115, 115, 1);
   }
-  a:nth-child(1) span {
+  a:nth-child(3) span {
     color: #29bdaf;
   }
 

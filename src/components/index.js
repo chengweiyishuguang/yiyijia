@@ -19,6 +19,8 @@ import layoutplayer from './personal/layout-player.vue'// 夜听和减压个人�
 import layoutprogress from './decompression/d-progress.vue'// 减压助眠播放页面进度条
 import dlistPopup from './decompression/d-listPopup.vue'// 减压助眠播放页面列表弹层
 import dtimeList from './decompression/d-time-list.vue'// 减压助眠播放页面定时弹层
+import layoutsearch from './night/layout-search.vue'// 夜听搜索框
+import layoutfixed from './night/layout-fixed.vue'// 夜听红色固定框
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -40,5 +42,7 @@ export default {
     Vue.component('layoutprogress', layoutprogress)
     Vue.component('dlistPopup', dlistPopup)
     Vue.component('dtimeList', dtimeList)
+    Vue.component('layoutsearch', layoutsearch)
+    Vue.component('layoutfixed', layoutfixed)
   }
 }
