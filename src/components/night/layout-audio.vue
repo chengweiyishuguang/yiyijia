@@ -16,7 +16,7 @@
         </div>
         <div class="list-item">
           <div class="list-text">
-            <span>打开心中的记事本</span>
+            <span>打开心中的记事本 <slot name="sort"></slot></span>
             <p>人生如歌&nbsp;&nbsp;感悟经典</p>
           </div>
           <div class="list-last">
@@ -28,6 +28,7 @@
               <img src="../../assets/click-item.png" alt />
               <span>14:42</span>
             </div>
+               <slot name="hg-o"></slot>
           </div>
 
         </div>
@@ -44,7 +45,7 @@
         </div>
         <div class="list-item">
           <div class="list-text">
-            <span>打开心中的记事本</span>
+            <span>打开心中的记事本 <slot name="sort-o"></slot></span>
             <p>人生如歌&nbsp;&nbsp;感悟经典</p>
           </div>
           <div class="list-last">
@@ -58,9 +59,8 @@
             </div>
           </div>
         </div>
-         <span class="hg">
-      <img src="../../assets/hg.png" alt="">
-    </span>
+        <slot name="hg"></slot>
+
       </div>
 
     </div>
@@ -80,6 +80,7 @@ export default {
   flex-direction: column;
   padding-left: 45px;
   box-sizing: border-box;
+
   p {
     width: 72px;
     height: 33px;
@@ -140,13 +141,9 @@ export default {
 }
 .list-text {
   span {
-    width: 254px;
-    height: 30px;
     font-size: 32px;
-    font-family: Source Han Sans SC;
-    font-weight: 500;
     color: rgba(68, 68, 68, 1);
-    line-height: 41px;
+    position: relative;
   }
   p {
     width: 177px;

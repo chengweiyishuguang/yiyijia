@@ -1,9 +1,17 @@
 <template>
   <div class="d-s-container">
       <ul>
-          <li>综合排序</li>
-          <li>播放最多</li>
-          <li>最新更新</li>
+          <li>
+          <span>综合排序</span>
+          </li>
+          <li>
+              <span>播放最多</span>
+              </li>
+          <li>
+              <span>
+                最新更新
+              </span>
+        </li>
       </ul>
 
   </div>
@@ -26,17 +34,24 @@ export default {
 
 }
 ul {
-padding:0 45px;
+padding:0 35px;
 width:750px;
 height:255px;
+box-sizing: border-box;
+
 background:rgba(255,255,255,1);
 box-shadow:0px 4px 8px 0px rgba(0, 0, 0, 0.21);
 li {
-height: 81px;
+    height: 81px;
+      line-height: 81px;
+      border-bottom:1px solid #f0f0f0;
+span {
+
 font-size:26px;
 color:rgba(115,115,115,1);
-line-height:36px;
-border-bottom:1px solid #f0f0f0;
+
+}
+
 }
 }
 

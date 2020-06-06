@@ -1,6 +1,7 @@
 <template>
-  <div class="bms-container">
-    <!-- 头部区域 -->
+<!-- 身心灵-家庭页 -->
+  <div class="family-container">
+      <!-- 头部区域 -->
     <layoutheader>
       <p slot="names">减压助眠</p>
     </layoutheader>
@@ -9,11 +10,9 @@
     <layoutsearch>
       <template slot="n-search"></template>
     </layoutsearch>
-
-    <!-- banner区域 -->
-    <decbanner />
-
-    <!-- tabbar -->
+     <!-- banner区域 -->
+    <decbanner/>
+     <!-- tabbar -->
     <div class="navigation">
       <router-link tag="a" class="navigation-left" to="/miuse">
         <span>音乐</span>
@@ -39,7 +38,6 @@
           <i class="iconfont icon-xialajiantou">
 
           </i>
-           <layoutsblayer></layoutsblayer>
         </span>
 
       </a>
@@ -57,7 +55,14 @@
       </a>
     </div>
     <!-- 听书区域 -->
-    <layoutaudio></layoutaudio>
+    <layoutaudio>
+
+        <template slot="hg-o">
+              <span class="hg">
+      <img src="../../assets/hg.png" alt="">
+        </span>
+        </template>
+    </layoutaudio>
 
     <!-- 固定条 -->
     <layoutfixed></layoutfixed>
@@ -66,12 +71,11 @@
 
 <script>
 export default {
-  name: 'bms-page'
+  name: 'family-page'
 }
 </script>
 
 <style lang="less" scoped>
-
 // tabbar
 .navigation {
   display: flex;
@@ -153,4 +157,22 @@ export default {
     color:#737373;
 
 }
+.sort-icon {
+  text-align: center;
+    font-size:16px;
+    width:47px;
+height:22px;
+line-height: 22px;
+border:1px solid #ff8439;
+color:#ff8439;
+border-radius:4px;
+position: absolute;
+top:10px;
+right:-86px;
+}
+.f-cion {
+    border:1px solid #29BDAF;
+color:#29BDAF;
+}
+
 </style>

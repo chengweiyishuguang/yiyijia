@@ -173,6 +173,17 @@ const routes = [
     name: 'bms-page',
     component: () => import('@/views/decompression-Body-m-s')
 
+  },
+  {
+    path: '/decompression-Sortingcomplete',
+    name: 'Sorting-page',
+    component: () => import('@/views/decompression-Sortingcomplete')
+  },
+  {
+    path: '/decompression-family',
+    name: 'Sorting-page',
+    component: () => import('@/views/decompression-family')
+
   }
 ]
 

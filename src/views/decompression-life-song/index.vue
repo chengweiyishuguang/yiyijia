@@ -41,7 +41,13 @@
       </a>
     </div>
      <!-- 听书区域 -->
-    <layoutaudio></layoutaudio>
+    <layoutaudio>
+      <template slot="hg">
+              <span class="hg">
+      <img src="../../assets/hg.png" alt="">
+        </span>
+        </template>
+    </layoutaudio>
 
   </div>
 </template>

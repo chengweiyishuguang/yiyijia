@@ -37,11 +37,13 @@
     </div>
 
     <!-- 听书区域 -->
-    <layoutaudio></layoutaudio>
-    <!-- 皇冠 -->
-    <span class="hg">
+    <layoutaudio>
+       <template slot="hg">
+              <span class="hg">
       <img src="../../assets/hg.png" alt="">
-    </span>
+        </span>
+        </template>
+    </layoutaudio>
 
   </div>
 </template>
@@ -157,18 +159,6 @@ text-align: center;
 
   }
 
-}
-.hg {
-  width: 71px;
-  height: 71px;
-  position: fixed;
-  z-index: 999;
-   bottom: 167px;
-   right: 34px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 </style>
