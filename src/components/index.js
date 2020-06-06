@@ -21,6 +21,7 @@ import dlistPopup from './decompression/d-listPopup.vue'// 减压助眠播放页
 import dtimeList from './decompression/d-time-list.vue'// 减压助眠播放页面定时弹层
 import layoutsearch from './night/layout-search.vue'// 夜听搜索框
 import layoutfixed from './night/layout-fixed.vue'// 夜听红色固定框
+import layoutsblayer from './decompression/d-Sortingbomblayer.vue'// 减压助眠-身心灵-综合排序弹层
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -44,5 +45,6 @@ export default {
     Vue.component('dtimeList', dtimeList)
     Vue.component('layoutsearch', layoutsearch)
     Vue.component('layoutfixed', layoutfixed)
+    Vue.component('layoutsblayer', layoutsblayer)
   }
 }

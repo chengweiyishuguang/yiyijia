@@ -7,66 +7,62 @@
 
     <!-- 搜索区域 -->
     <layoutsearch>
-      <template slot="n-search">
-
-    </template>
+      <template slot="n-search"></template>
     </layoutsearch>
 
     <!-- banner区域 -->
     <div class="banner">
-      <img src alt />
+      <img src="../../assets/d-banner.png" alt />
     </div>
 
     <!-- tabbar -->
     <div class="navigation">
-         <router-link tag="a" class="navigation-left" to="/miuse">
-             <span>音乐</span>
-            <i class="line" style="visibility:hidden;"></i>
-         </router-link>
-        <router-link tag="a" class="navigation-middle" to="/">
-            <span>人生如歌</span>
+      <router-link tag="a" class="navigation-left" to="/miuse">
+        <span>音乐</span>
         <i class="line" style="visibility:hidden;"></i>
-        </router-link>
-        <router-link tag="a" class="navigation-right" to="/body">
-            <span>身心灵</span>
-        <i class="line" ></i>
-        </router-link>
-
+      </router-link>
+      <router-link tag="a" class="navigation-middle" to="/">
+        <span>人生如歌</span>
+        <i class="line" style="visibility:hidden;"></i>
+      </router-link>
+      <router-link tag="a" class="navigation-right" to="/body">
+        <span>身心灵</span>
+        <i class="line"></i>
+      </router-link>
     </div>
 
     <!--导航2-->
     <div class="navigation-bar">
       <a href="#">
-           <span>
-               综合排序
-          <select name="" id="" style="border:none">
-              <option value=""></option>
-          </select>
-       </span>
+        <span>
+          <!-- 综合排序 -->
+
+          综合排序
+          <i class="iconfont icon-xialajiantou">
+
+          </i>
+           <layoutsblayer></layoutsblayer>
+        </span>
 
       </a>
       <a href="#">
         <span>事业</span>
-
       </a>
       <a href="#">
         <span>家庭</span>
-
       </a>
       <a href="#">
         <span>社会</span>
-
       </a>
       <a href="#">
         <span>职场</span>
-
       </a>
     </div>
     <!-- 听书区域 -->
     <layoutaudio></layoutaudio>
 
     <!-- 固定条 -->
-   <layoutfixed></layoutfixed>
+    <layoutfixed></layoutfixed>
   </div>
 </template>
 
@@ -82,11 +78,11 @@ export default {
   margin: 25px 35px 9px 35px;
   width: 680px;
   height: 298px;
-  border-radius: 20px;
   background-color: #ccc;
   img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
   }
 }
 // tabbar
@@ -101,7 +97,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-
 }
 .navigation > a {
   text-align: center;
@@ -114,7 +109,6 @@ export default {
     font-weight: 500;
     color: rgba(85, 85, 85, 1);
     line-height: 30px;
-
   }
   .line {
     display: block;
@@ -123,17 +117,24 @@ export default {
     height: 2px;
     background: rgba(41, 189, 175, 1);
     border-radius: 1px;
-
   }
 }
 // 导航2
 .navigation-bar {
-  margin:40px 0 40px 0;
+    height: 82px;
+//   margin: 40px 0 40px 0;
   display: flex;
   justify-content: space-between;
-  padding:0 59px 0 45px;
+  align-items: center;
+  padding: 0 59px 0 45px;
   box-sizing: border-box;
-  border-bottom:1px solid #EFEFEF;
+  border-bottom: 1px solid #efefef;
+  a {
+      display: block;
+    //   width: 100%;
+      height: 100%;
+    //   line-height: 50%;
+  }
 
   span {
     width: 102px;
@@ -157,5 +158,12 @@ export default {
     border-radius: 1px;
   }
 }
+.navigation-bar a:nth-child(1) {
+    position: relative;
+}
+.icon-xialajiantou {
+    font-size:12px;
+    color:#737373;
 
+}
 </style>
