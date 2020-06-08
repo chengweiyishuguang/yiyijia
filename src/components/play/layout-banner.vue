@@ -28,14 +28,14 @@ img {
 }
 .main .banner {
   position: relative;
+  overflow: hidden;
 
 }
 .main .banner-img {
   width: 506px;
   height: 507px;
-  margin: 25px 40px 0 122px;
+  margin: 25px 0 0 122px;
   text-align: center;
-  position: relative;
   top:32px;
 
 }
@@ -62,7 +62,7 @@ img {
   width: 231px;
   height: 185px;
   right: 45px;
-  top: -35px;
+  top: -40px;
 }
 .banner .zhizhen img {
   width: 100%;

@@ -17,15 +17,15 @@
                 </slot>
 
                 <div class="icon-o">
-                    <div class="icon-clock">
-                        <img src="../../assets/bo-clock-icon.png" alt="">
-                    </div>
+                        <!-- <img src="../../assets/bo-clock-icon.png" alt=""> -->
+                        <i class="icon-clock"></i>
+                        <div class="collent-box">
+                          <i class="collent"></i>
+                      <i class="n-collent"></i>
+                        </div>
 
-                    <div class="footer-collent">
-
-                            <img src="../../assets/collent.png" alt="">
-                            <img src="../../assets/n-collent.png" style="display: none;" alt="">
-                    </div>
+                        <!-- <img src="../../assets/collent.png" alt="">
+                        <img src="../../assets/n-collent.png" style="display: none;" alt=""> -->
 
                 </div>
             </div>
@@ -54,13 +54,15 @@ export default {
 
 <style lang="less" scoped>
 footer {
-  margin-top: 99.9975px;
+  margin-top: 39px;
 
 }
 .footer-top {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 0 36px 0 33px;
 }
@@ -83,32 +85,30 @@ footer {
 height:38px;
 line-height: 38px;
 font-size:40px;
-font-family:Source Han Sans SC;
 font-weight:400;
 color:rgba(255,255,255,1);
 
 }
 .footer-top .text span {
  font-size:22px;
-font-family:Source Han Sans SC;
 font-weight:400;
 color:rgba(227,229,231,1);
 }
 .footer-right {
+  top:-52px;
   display: flex;
   flex-direction: column;
+  justify-content: right;
   align-items: center;
+   position: relative;
 
 }
-.footer-right .follow {
-  margin-left: 170px;
-}
+
 .footer-right .follow p {
   width:83px;
-height:41px;
-line-height: 41px;
+  height:41px;
+  line-height: 41px;
   font-size:20px;
-  font-family:Source Han Sans SC;
   font-weight:500;
   color:rgba(172,172,172,1);
   border-radius: 10px;
@@ -122,33 +122,46 @@ border-radius:10px;
   margin-top:8px;
 }
 .icon-o {
-  margin-top:20px;
-  width: 100%;
+
   display: flex;
   justify-content:space-between;
   align-items: center;
-  padding-left:130px;
   box-sizing: border-box;
-}
-.icon-o .icon-clock {
-  width: 41px;
-  height: 34px;
-}
-.icon-o .icon-clock img {
-  width: 100%;
-  height: 100%;
-}
 
-.icon-o .footer-collent {
-  width: 41px;
-  height: 34px;
-    margin-left:20px;
+    .icon-clock {
+      width:35px;
+      height:35px;
+      background: url(../../assets/bo-clock-icon.png);
+      background-size: 35px;
+      position: absolute;
+      bottom:-78px;
+      left:0px;
+    }
 
 }
-.icon-o .footer-collent img {
- width: 100%;
-  height: 100%;
-
+.collent-box {
+  position: absolute;
+  bottom:-78px;
+  right: 0;
 }
+
+  .collent {
+      width:35px;
+      height:35px;
+      background: url(../../assets/collent.png) no-repeat;
+      background-size: 35px;
+      position: absolute;
+     bottom:0;
+      right:0;
+  }
+  .n-collent {
+     width:35px;
+      height:35px;
+      background: url(../../assets/n-collent.png) no-repeat;
+      background-size: 35px;
+      position: absolute;
+     bottom:0;
+     right: 0;
+  }
 
 </style>

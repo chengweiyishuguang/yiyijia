@@ -174,15 +174,21 @@ const routes = [
     component: () => import('@/views/decompression-Body-m-s')
 
   },
-  {
+  { // 减压助眠-身心灵-排序页面
     path: '/decompression-Sortingcomplete',
     name: 'Sorting-page',
     component: () => import('@/views/decompression-Sortingcomplete')
   },
-  {
+  { // 减压助眠-身心灵-家庭
     path: '/decompression-family',
     name: 'Sorting-page',
     component: () => import('@/views/decompression-family')
+
+  },
+  { // 减压助眠-身心灵-播放页面
+    path: '/decompression-playpage',
+    name: 'playpage',
+    component: () => import('@/views/decompression-playpage')
 
   }
 ]

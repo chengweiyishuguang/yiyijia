@@ -44,8 +44,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.progress-container {
+  margin-top:142px;
+}
 .progress {
- margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

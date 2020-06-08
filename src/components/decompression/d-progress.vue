@@ -43,9 +43,10 @@ export default {
 
 <style lang="less" scoped>
 .d-progress-container {
-    margin-top:316px;
+    overflow: hidden;
 }
 .progress {
+margin:0;
   display: flex;
   justify-content: center;
   align-items: center;
