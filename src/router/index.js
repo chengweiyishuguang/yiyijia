@@ -196,6 +196,12 @@ const routes = [
     name: 'my-Realname',
     component: () => import('@/views/my-Realname')
 
+  },
+  { // 我的-实名认证-详情页
+    path: '/my-IDauthentication',
+    name: 'ID-page',
+    component: () => import('@/views/my-IDauthentication')
+
   }
 ]
 

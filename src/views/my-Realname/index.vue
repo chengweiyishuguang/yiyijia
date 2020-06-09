@@ -38,6 +38,11 @@
           本站能够准确地为您完税。
         </p>
     </div>
+    <div class="Start-certification">
+      <i class="button"></i>
+      <span>开始提交</span>
+
+    </div>
   </div>
 </template>
 
@@ -54,6 +59,7 @@ input {
 .main-realname {
   margin-top: 88px;
   padding: 0 34px;
+
   li {
     height: 110px;
     line-height: 110px;
@@ -102,5 +108,27 @@ input {
        font-size:24px;
        color:#696969;
    }
+}
+.Start-certification {
+  margin-top:520px;
+  width: 750px;
+  position: absolute;
+  padding:0 35px 41px 35px;
+
+  i {
+    background: url(../../assets/certification.png) no-repeat;
+    width:680px;
+    height:90px;
+    background-size:680px 90px;
+    position: absolute;
+
+    z-index: -1;
+
+  }
+  span {
+    font-size:34px;
+    color:#fff;
+    margin-left:273px;
+  }
 }
 </style>
