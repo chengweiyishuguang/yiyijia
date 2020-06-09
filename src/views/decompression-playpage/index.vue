@@ -25,7 +25,6 @@
         </div>
     </div>
       </template>
-
     </layoutbanner>
     <!-- 播放区域 -->
 
