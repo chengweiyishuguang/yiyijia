@@ -202,6 +202,12 @@ const routes = [
     name: 'ID-page',
     component: () => import('@/views/my-IDauthentication')
 
+  },
+  { // 我的-关于我们
+    path: '/my-Aboutus',
+    name: 'Aboutus-page',
+    component: () => import('@/views/my-Aboutus')
+
   }
 ]
 
