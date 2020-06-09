@@ -190,6 +190,12 @@ const routes = [
     name: 'playpage',
     component: () => import('@/views/decompression-playpage')
 
+  },
+  { // 我的-实名认证
+    path: '/my-Realname',
+    name: 'my-Realname',
+    component: () => import('@/views/my-Realname')
+
   }
 ]
 

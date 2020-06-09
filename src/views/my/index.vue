@@ -110,16 +110,16 @@
     <!-- 认证信息 -->
     <ul class="authentication">
       <li>
-        <span>实名认证</span>
+        <router-link tag="span" to>实名认证</router-link>
       </li>
       <li>
-        <span>推送设置</span>
+        <router-link tag="span" to>推送设置</router-link>
       </li>
       <li>
-        <span>地址管理</span>
+        <router-link tag="span" to>地址管理</router-link>
       </li>
       <li>
-        <span>关于我们</span>
+        <router-link tag="span" to>关于我们</router-link>
       </li>
     </ul>
   </div>
@@ -316,6 +316,7 @@ export default {
   padding: 0px 37px 0;
   background-color: #fff;
   box-sizing: border-box;
+  margin-bottom:180px;
   li {
     width: 100%;
     height: 99px;
