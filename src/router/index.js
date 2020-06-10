@@ -208,6 +208,13 @@ const routes = [
     name: 'Aboutus-page',
     component: () => import('@/views/my-Aboutus')
 
+  },
+
+  { // 我的-地址管理
+    path: '/my-Addressmanagement',
+    name: 'Address-page',
+    component: () => import('@/views/my-Addressmanagement')
+
   }
 ]
 
