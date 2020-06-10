@@ -106,6 +106,7 @@ export default {
     background-size: 680px 90px;
   position: fixed;
   bottom:52px;
+  left:35px;
   z-index: 1;
   }
 </style>

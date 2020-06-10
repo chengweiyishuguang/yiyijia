@@ -215,7 +215,14 @@ const routes = [
     name: 'Address-page',
     component: () => import('@/views/my-Addressmanagement')
 
+  },
+  { // 我的-新增地址
+    path: '/my-Addharvestaddress',
+    name: 'A-harvestaddress-page',
+    component: () => import('@/views/my-Addharvestaddress')
+
   }
+
 ]
 
 const router = new VueRouter({
