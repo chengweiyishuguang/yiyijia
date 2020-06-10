@@ -220,7 +220,11 @@ const routes = [
     path: '/my-Addharvestaddress',
     name: 'A-harvestaddress-page',
     component: () => import('@/views/my-Addharvestaddress')
-
+  },
+  { // 我的-推送设置
+    path: '/my-Pushsettings',
+    name: 'Pushsettingspage',
+    component: () => import('@/views/my-Pushsettings')
   }
 
 ]
