@@ -225,6 +225,11 @@ const routes = [
     path: '/my-Pushsettings',
     name: 'Pushsettingspage',
     component: () => import('@/views/my-Pushsettings')
+  },
+  { // 我的-推送设置
+    path: '/my-Punchuser',
+    name: 'punchuser-page',
+    component: () => import('@/views/my-Punchuser')
   }
 
 ]
