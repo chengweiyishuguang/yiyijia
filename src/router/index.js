@@ -230,6 +230,16 @@ const routes = [
     path: '/my-Punchuser',
     name: 'punchuser-page',
     component: () => import('@/views/my-Punchuser')
+  },
+  { // 我的-我的收益
+    path: '/my-myprofit',
+    name: 'profit-page',
+    component: () => import('@/views/my-myprofit')
+  },
+  { // 我的-我的订单
+    path: '/my-Myorder',
+    name: 'myorder-page',
+    component: () => import('@/views/my-Myorder')
   }
 
 ]

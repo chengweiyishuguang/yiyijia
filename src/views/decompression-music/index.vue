@@ -131,17 +131,19 @@ export default {
   text-align: center;
 
   span {
-    width: 65px;
-    height: 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
     font-size: 32px;
-    font-family: Source Han Sans SC;
-    font-weight: 500;
     color: rgba(85, 85, 85, 1);
-    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .line {
     display: block;
-    margin: 18px 0 11px 0;
+    margin-top:18px;
     width: 66px;
     height: 2px;
     background: rgba(41, 189, 175, 1);
