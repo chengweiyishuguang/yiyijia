@@ -63,7 +63,7 @@ ul {
 .slider {
   width: 71px;
   height: 45px;
-  border-radius: 50%;
+  border-radius: 20px;
   border: 1px solid #ccc;
   background-color: #1eb89c;
   position: relative;

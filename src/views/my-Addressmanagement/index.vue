@@ -31,6 +31,8 @@
     </li>
   </ul>
   <button></button>
+  <!-- 弹出层 -->
+  <deleteLayer/>
   </div>
 
 </template>

@@ -27,7 +27,8 @@ height:1334px;
 position: fixed;
 top:0;
 left:0;
-opacity:0.9;
+background-color: #7b7b7b;
+  opacity: 0.5;
 z-index: 998;
 .set-Bomblayer {
     background-color: #fff;

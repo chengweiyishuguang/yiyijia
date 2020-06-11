@@ -24,6 +24,8 @@ import layoutfixed from './night/layout-fixed.vue'// 夜听红色固定框
 import layoutsblayer from './decompression/d-Sortingbomblayer.vue'// 减压助眠-身心灵-综合排序弹层
 import decbanner from './decompression/d-layout-banner.vue'// 减压助眠banner区域
 import Setfrequency from './my/Set-frequency.vue'// 我的-推送页面-弹层
+import deleteLayer from './my/Delete-layer.vue'// 我的-地址-确认删除地址弹层
+import editLayer from './my/edit-layer.vue'
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -50,5 +52,7 @@ export default {
     Vue.component('layoutsblayer', layoutsblayer)
     Vue.component('decbanner', decbanner)
     Vue.component('Setfrequency', Setfrequency)
+    Vue.component('deleteLayer', deleteLayer)
+    Vue.component('editLayer', editLayer)
   }
 }

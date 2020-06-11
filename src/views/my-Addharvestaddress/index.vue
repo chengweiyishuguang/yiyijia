@@ -28,6 +28,8 @@
 
     </div>
     <button></button>
+    <!-- 弹层 -->
+    <editLayer/>
   </div>
 </template>
 
