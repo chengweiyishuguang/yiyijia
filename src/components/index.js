@@ -25,7 +25,8 @@ import layoutsblayer from './decompression/d-Sortingbomblayer.vue'// 减压助�
 import decbanner from './decompression/d-layout-banner.vue'// 减压助眠banner区域
 import Setfrequency from './my/Set-frequency.vue'// 我的-推送页面-弹层
 import deleteLayer from './my/Delete-layer.vue'// 我的-地址-确认删除地址弹层
-import editLayer from './my/edit-layer.vue'
+import editLayer from './my/edit-layer.vue'// 我的-地址-确认新增地址弹层
+import bread from './my/bread.vue'
 export default {
   install (Vue) {
     Vue.component('layoutheader', layoutheader)
@@ -54,5 +55,6 @@ export default {
     Vue.component('Setfrequency', Setfrequency)
     Vue.component('deleteLayer', deleteLayer)
     Vue.component('editLayer', editLayer)
+    Vue.component('bread', bread)
   }
 }
