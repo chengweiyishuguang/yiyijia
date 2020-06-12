@@ -245,6 +245,11 @@ const routes = [
     path: '/my-Orderdetails',
     name: 'Order-details-page',
     component: () => import('@/views/my-Orderdetails')
+  },
+  { // 我的-我的订单-已完成
+    path: '/my-Ordercompleted',
+    name: 'Order-completed-page',
+    component: () => import('@/views/my-Ordercompleted')
   }
 
 ]
