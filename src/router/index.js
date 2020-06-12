@@ -270,8 +270,12 @@ const routes = [
     path: '/my-Tobereceived',
     name: 'To-b-received-page',
     component: () => import('@/views/my-Tobereceived')
+  },
+  { // 我的-我的订单-待发货详情页
+    path: '/my-Detailpagetobedelivered',
+    name: 'Detail-page',
+    component: () => import('@/views/my-Detailpagetobedelivered')
   }
-
 ]
 
 const router = new VueRouter({
