@@ -260,6 +260,11 @@ const routes = [
     path: '/my-Allorders',
     name: 'All-orders-page',
     component: () => import('@/views/my-Allorders')
+  },
+  { // 我的-我的订单-待支付详情页
+    path: '/my-DetailsToBepaid',
+    name: 'Details-paid-page',
+    component: () => import('@/views/my-DetailsToBepaid')
   }
 
 ]

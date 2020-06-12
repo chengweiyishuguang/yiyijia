@@ -1,7 +1,7 @@
 <template>
-<!-- 我的订单-全部 -->
+  <!-- 我的订单-全部 -->
   <div class="All-orders">
-        <!-- 头部区域 -->
+    <!-- 头部区域 -->
     <layoutheader>
       <p slot="names">我的订单</p>
     </layoutheader>
@@ -9,7 +9,7 @@
     <div class="order-bar">
       <a class="order-left">
         <span>全部</span>
-        <i class="line" ></i>
+        <i class="line"></i>
       </a>
       <a class="order-middle">
         <span>
@@ -33,14 +33,16 @@
         <span>已取消</span>
       </div>
       <div class="information-middle">
-        <div class=" information-middle-top">
+        <div class="information-middle-top">
           <div class="information-middle-img">
-          <img src="" alt="">
+            <img src alt />
+          </div>
+          <p>华夏滋养精华液3号50ml</p>
         </div>
-        <p>华夏滋养精华液3号50ml</p>
-        </div>
-        <p> 共1件 实付:<span>￥439.00</span> </p>
-
+        <p>
+          共1件 实付:
+          <span>￥439.00</span>
+        </p>
       </div>
       <div class="information-pay Buy-again">
         <button>再次购买</button>
@@ -52,14 +54,16 @@
         <span class="Payment-successful">支付成功</span>
       </div>
       <div class="information-middle">
-        <div class=" information-middle-top">
+        <div class="information-middle-top">
           <div class="information-middle-img">
-          <img src="" alt="">
+            <img src alt />
+          </div>
+          <p>华夏滋养精华液1号10ml</p>
         </div>
-        <p>华夏滋养精华液1号10ml</p>
-        </div>
-        <p> 共1件 实付:<span>￥128.00</span> </p>
-
+        <p>
+          共1件 实付:
+          <span>￥128.00</span>
+        </p>
       </div>
       <div class="information-pay Delete-order">
         <button>删除</button>
@@ -76,9 +80,9 @@ export default {
 
 <style lang="less" scoped>
 .All-orders {
-    margin-top:88px;
-    background-color: #F2F2F2;
-    height: 1334px;
+  margin-top: 88px;
+  background-color: #f2f2f2;
+  height: 1334px;
 }
 .order-bar {
   display: flex;
@@ -91,15 +95,15 @@ export default {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding:29px 0 14px 0;
+  padding: 29px 0 14px 0;
 }
 .order-bar > a {
-     display: block;
-     width: 100%;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   span {
     display: block;
@@ -111,7 +115,6 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
   }
 
   .line {
@@ -120,7 +123,6 @@ export default {
     height: 2px;
     background: rgba(41, 189, 175, 1);
     border-radius: 1px;
-
   }
 }
 .order-bar > a:nth-child(1) {
@@ -130,60 +132,59 @@ export default {
 }
 .Order-information {
   margin: 0 auto;
-  margin-top:20px;
-  padding:0 20px;
-  width:680px;
-height:413px;
-background:rgba(255,255,255,1);
-border-radius:20px;
-.information-top {
-  height: 71px;
-  line-height: 71px;
-  border-bottom: 1px solid  #EEEEEE;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 680px;
+  height: 413px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  .information-top {
+    height: 71px;
+    line-height: 71px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
     .Payment-successful {
-    color:#FC5931 ;
-}
-  p {
-    font-size:26px;
-    color:#666666;
+      color: #fc5931;
+    }
+    p {
+      font-size: 26px;
+      color: #666666;
+    }
+    span {
+      font-size: 26px;
+      color: #666666;
+    }
   }
-  span {
-    font-size:26px;
-    color:#666666;
-  }
-}
 }
 .information-middle {
-height:245px;
-width: 100%;
-display: flex;
-flex-direction: column;
-border-bottom: 1px solid #EEEEEE;
-p {
-  text-align: right;
-  font-size:24px;
-  color:#121212;
-  span {
-    font-weight: 700;
-  }
-}
-.information-middle-top {
-  padding: 25px 0 23px 0;
+  height: 245px;
+  width: 100%;
   display: flex;
- flex-shrink: 0;
- box-sizing: border-box;
- p {
-   font-size:26px;
-   color:#121212;
-   margin:14px 0 0 26px;
- }
-
-}
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee;
+  p {
+    text-align: right;
+    font-size: 24px;
+    color: #121212;
+    span {
+      font-weight: 700;
+    }
+  }
+  .information-middle-top {
+    padding: 25px 0 23px 0;
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    p {
+      font-size: 26px;
+      color: #121212;
+      margin: 14px 0 0 26px;
+    }
+  }
   .information-middle-img {
-    width:165px;
-    height:148px;
+    width: 165px;
+    height: 148px;
     border-radius: 20px;
     background-color: #ccc;
     img {
@@ -199,23 +200,21 @@ p {
   align-items: center;
   justify-content: flex-end;
   button {
-    border:none;
+    border: none;
     height: 50px;
     width: 132px;
-    font-size:24px;
+    font-size: 24px;
     border-radius: 10px;
   }
 }
 .Delete-order {
-    button  {
-          color:#121212;
-    }
-
+  button {
+    color: #121212;
+  }
 }
 .Buy-again {
-      button  {
-       color:#29BDAF;
-    }
-
+  button {
+    color: #29bdaf;
+  }
 }
 </style>
