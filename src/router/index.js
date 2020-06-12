@@ -250,6 +250,11 @@ const routes = [
     path: '/my-Ordercompleted',
     name: 'Order-completed-page',
     component: () => import('@/views/my-Ordercompleted')
+  },
+  { // 我的-我的订单-已取消详情页
+    path: '/my-Detailspagecancelled',
+    name: 'D-page-cancelled',
+    component: () => import('@/views/my-Detailspagecancelled')
   }
 
 ]
