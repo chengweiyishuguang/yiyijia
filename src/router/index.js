@@ -255,6 +255,11 @@ const routes = [
     path: '/my-Detailspagecancelled',
     name: 'D-page-cancelled',
     component: () => import('@/views/my-Detailspagecancelled')
+  },
+  { // 我的-我的订单-已取消详情页
+    path: '/my-Allorders',
+    name: 'All-orders-page',
+    component: () => import('@/views/my-Allorders')
   }
 
 ]
