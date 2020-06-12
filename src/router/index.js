@@ -265,6 +265,11 @@ const routes = [
     path: '/my-DetailsToBepaid',
     name: 'Details-paid-page',
     component: () => import('@/views/my-DetailsToBepaid')
+  },
+  { // 我的-我的订单-待收货
+    path: '/my-Tobereceived',
+    name: 'To-b-received-page',
+    component: () => import('@/views/my-Tobereceived')
   }
 
 ]
