@@ -238,7 +238,6 @@ export default {
     width: 132px;
     height: 50px;
     background-size: 132px 50px;
-
   }
 
 }

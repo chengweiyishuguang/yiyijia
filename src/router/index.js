@@ -275,6 +275,11 @@ const routes = [
     path: '/my-Detailpagetobedelivered',
     name: 'Detail-page',
     component: () => import('@/views/my-Detailpagetobedelivered')
+  },
+  { // 我的-我的订单-待发货详情页
+    path: '/my-Platformcard',
+    name: 'Platform-card-page',
+    component: () => import('@/views/my-Platformcard')
   }
 ]
 
