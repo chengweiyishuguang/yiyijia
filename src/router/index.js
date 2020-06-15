@@ -280,6 +280,11 @@ const routes = [
     path: '/my-Platformcard',
     name: 'Platform-card-page',
     component: () => import('@/views/my-Platformcard')
+  },
+  { // 我的空间
+    path: '/Myspace',
+    name: 'My-space-page',
+    component: () => import('@/views/Myspace')
   }
 ]
 
