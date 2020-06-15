@@ -285,6 +285,11 @@ const routes = [
     path: '/Myspace',
     name: 'My-space-page',
     component: () => import('@/views/Myspace')
+  },
+  { // 我的空间-编辑资料
+    path: '/Myspace-Editinformation',
+    name: 'Edit-information',
+    component: () => import('@/views/Myspace-Editinformation')
   }
 ]
 
